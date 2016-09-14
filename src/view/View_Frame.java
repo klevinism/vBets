@@ -1,6 +1,7 @@
 package view;
 
 import java.awt.BorderLayout;
+import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Rectangle;
 
@@ -13,8 +14,12 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.ImageIcon;
 import javax.swing.JDialog;
+import javax.swing.JScrollPane;
 import javax.swing.UIManager;
 
+import controller.SettingViewController;
+
+import model.SettingViewObject;
 import model.globals.Globals;
 
 import java.awt.event.MouseAdapter;
@@ -49,8 +54,24 @@ public class View_Frame extends JFrame {
 		mntmSettings.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				SettingView_Panel settViewPanel = new SettingView_Panel();
-				View_Dialog SettingView = new View_Dialog("Settings", settViewPanel);
-				
+				JScrollPane jsp = new JScrollPane(settViewPanel);
+			    jsp.setPreferredSize(new Dimension(400, 200));
+			    jsp.setBorder(null);
+			    
+				int result = JOptionPane.showConfirmDialog(View_Frame.this, jsp, "My custom dialog", JOptionPane.OK_CANCEL_OPTION,
+                        JOptionPane.PLAIN_MESSAGE);
+				if (result == JOptionPane.OK_OPTION) {
+					if(settViewPanel.getClass().getSimpleName().equals(SettingView_Panel.class.getSimpleName())){
+						SettingViewObject settingObject = new SettingViewObject();
+						settingObject = ((SettingView_Panel) settViewPanel).getSettings();
+						
+						
+						SettingViewController svc = new SettingViewController(settingObject);
+						svc.setActionPerformed("Save");
+					}
+				} else {
+				    System.out.println("User canceled / closed the dialog, result = " + result);
+				}
 			}
 		});
 		

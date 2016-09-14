@@ -182,7 +182,7 @@ public class DeleteAdView_Panel extends JPanel {
 			@Override
 			public void actionPerformed(ActionEvent arg0){
 				currentFrame.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-
+				
 				// TODO Auto-generated method stub
 				AsyncTasks asyncTasks = new AsyncTasks();
 				asyncTasks.deletePost(getSelectedPost());

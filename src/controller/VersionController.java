@@ -46,7 +46,7 @@ public class VersionController{
 	public String getCurrentVersionAsString(){
 		if(CurrentVersion == null)
 			getCurrentVersion();
-		return CurrentVersion;
+		return this.CurrentVersion;
 	}
 	
 	private int getLocalVersion(String filePath) throws Exception{

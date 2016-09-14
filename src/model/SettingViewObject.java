@@ -35,7 +35,7 @@ public class SettingViewObject {
 	
 	public String getAdminUrl(){
 		if(AdminUrl == "" || AdminUrl == null)
-			return XmlData.get("AdminUrl");
+			return ((XmlData.get("AdminUrl") != null) || (XmlData.get("AdminUrl") != "") ? XmlData.get("AdminUrl") :  "");
 		else
 			return AdminUrl;
 	}
