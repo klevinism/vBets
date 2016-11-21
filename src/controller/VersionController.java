@@ -35,12 +35,11 @@ public class VersionController{
 			try {
 				return getLocalVersion(Globals.paths.UpdaterXmlLocalFile);
 			} catch (Exception e) {
-				e.printStackTrace();
+				return 0;
 			}
 		}else{
 			return Integer.parseInt(CurrentVersion.replace(".", ""));
 		}
-		return 0;
 	}
 	
 	public String getCurrentVersionAsString(){

@@ -3,18 +3,10 @@ package model.web;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.Iterator;
-import java.util.List;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-
-import org.w3c.dom.Element;
-
 import model.SettingViewObject;
 
 import com.gargoylesoftware.htmlunit.*;
 import com.gargoylesoftware.htmlunit.html.*;
-import com.gargoylesoftware.htmlunit.javascript.host.Document;
 
 import controller.SettingViewController;
 

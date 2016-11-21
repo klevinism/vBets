@@ -26,7 +26,7 @@ public class BettingView_Panel extends JPanel {
 	 */
 	public BettingView_Panel(JFrame currentFrame) {
 		setLayout(new MigLayout("", "[581.00px,grow]", "[357px,grow][16px]"));
-		setSize(250,250);
+		setSize(750,550);
 		
 		JScrollPane scrollPane = new JScrollPane();
 		add(scrollPane, "cell 0 0 1 2,grow");
@@ -41,19 +41,19 @@ public class BettingView_Panel extends JPanel {
 				System.out.println( "Hello World" );
 			}
 		});
-		btnNewButton.setIcon(new ImageIcon(BettingView_Panel.class.getResource(Globals.paths.LocalImageFolder + "/search.png")));
+		btnNewButton.setIcon(new ImageIcon(BettingView_Panel.class.getResource(Globals.paths.LocalImageFolder + "search.png")));
 		toolBar.add(btnNewButton);
 		
 		toolBar.addSeparator(new Dimension(5,10));
 		
 		JButton btnNewButton_1 = new JButton("Place Bet");
-		btnNewButton_1.setIcon(new ImageIcon(BettingView_Panel.class.getResource(Globals.paths.LocalImageFolder + "/add.png")));
+		btnNewButton_1.setIcon(new ImageIcon(BettingView_Panel.class.getResource(Globals.paths.LocalImageFolder + "add.png")));
 		toolBar.add(btnNewButton_1);
 		
 		toolBar.addSeparator(new Dimension(40,20));
 		
 		JButton btnSearchPlace = new JButton("Search & Place");
-		btnSearchPlace.setIcon(new ImageIcon(BettingView_Panel.class.getResource(Globals.paths.LocalImageFolder + "/add_auto.png")));
+		btnSearchPlace.setIcon(new ImageIcon(BettingView_Panel.class.getResource(Globals.paths.LocalImageFolder + "add_auto.png")));
 		btnSearchPlace.setHorizontalAlignment(SwingConstants.RIGHT);
 		toolBar.add(btnSearchPlace);
 		

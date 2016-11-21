@@ -26,7 +26,7 @@ public class Paths extends Globals {
 	 */
 	
 	public static String RemoteBaseUrl = "http://delimeta.info";
-	public static String RemoteUpdaterUrl = RemoteBaseUrl + "/updater/updater_AdsAttacher";
+	public static String RemoteUpdaterUrl = RemoteBaseUrl + "/updater/updater_vBets";
 	public static String RemoteUpdaterFileUrl = RemoteUpdaterUrl + "/updater.xml";
 	
 	public static String RemoteAdminUrl = svc.getSettings().getAdminUrl();

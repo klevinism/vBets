@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Updater>
+<UpdaterGeneral>
+<CurrentVersion>1.0.2</CurrentVersion>
+</UpdaterGeneral>
+<UpdaterAdvanced>
+<UpdateTime>11:37 PM</UpdateTime>
+<UpdateDate>8/23/2016</UpdateDate>
+<UpdateDescription>
+-Fixed loading on 'Attach Ad'
+-Fixed 'General' functionality for settings
+-Fixed functionality for delete add, for all users
+</UpdateDescription>
+</UpdaterAdvanced>
+</Updater>

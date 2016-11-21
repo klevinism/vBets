@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_101"/>
-	<classpathentry kind="lib" path="C:/Users/admin/Downloads/htmlunit-2.15-OSGi.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="C:/Users/admin/git/Ads-Attacher2/AdsAttacher/miglayout15-swing.jar"/>
-	<classpathentry kind="lib" path="C:/Users/admin/git/Ads-Attacher2/AdsAttacher/jgoodies-forms-1.8.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/admin/git/Ads-Attacher2/AdsAttacher/jgoodies-forms-1.8.0-sources.jar"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Silver/git/vBets/lib/htmlunit-2.23-OSGi.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Silver/git/vBets/lib/miglayout-3.5.5-swing.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

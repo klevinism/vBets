@@ -3,15 +3,11 @@ package model.web;
 import java.util.Iterator;
 import java.util.List;
 
-import org.cyberneko.html.HTMLElements.Element;
-
 import com.gargoylesoftware.htmlunit.html.DomElement;
 import com.gargoylesoftware.htmlunit.html.DomNodeList;
 import com.gargoylesoftware.htmlunit.html.HtmlButton;
-import com.gargoylesoftware.htmlunit.html.HtmlElement;
 import com.gargoylesoftware.htmlunit.html.HtmlForm;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
-import com.gargoylesoftware.htmlunit.html.HtmlSubmitInput;
 
 public class WebPageManipulation{
 	private HtmlPage Page;
@@ -28,7 +24,6 @@ public class WebPageManipulation{
 		return Page.getFormByName(name);
 	}
 	
-	@SuppressWarnings("unchecked")
 	public Iterable<DomElement> getAllElements(HtmlForm form){
 		return (Iterable<DomElement>)form.getChildElements(); 
 	}

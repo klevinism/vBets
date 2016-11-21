@@ -1,3 +1,4 @@
+import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Image;
 import java.awt.Toolkit;
@@ -33,10 +34,13 @@ public class Main {
 				public void run() {
 					try {
 						View_Frame frame = new View_Frame("Value Bets");
-						
+						frame.setLocationRelativeTo(null);
+						frame.setMinimumSize(new Dimension(370,200));
+
 						LauncherView_Panel launcherView = new LauncherView_Panel(frame);
 
-						Image image = Toolkit.getDefaultToolkit().getImage(launcherView.getClass().getResource(Globals.paths.LocalImageFolder + "/app-icon.jpeg"));
+						//System.out.println(Globals.paths.LocalImageFolder);
+						Image image = Toolkit.getDefaultToolkit().getImage(launcherView.getClass().getResource(Globals.paths.LocalImageFolder + "app-icon.png"));
 						ImageIcon icon = new ImageIcon(image);
 						frame.setIconImage(icon.getImage());
 						

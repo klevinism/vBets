@@ -4,6 +4,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
 import java.awt.Cursor;
+import java.awt.Dimension;
 import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -29,7 +30,7 @@ public class LauncherView_Panel extends JPanel {
 	 */
 	public LauncherView_Panel(final JFrame currentFrame) {
 		setLayout(new GridLayout(1, 0, 0, 0));
-		
+
 		JScrollPane scrollPane = new JScrollPane();
 		add(scrollPane);
 		
